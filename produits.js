@@ -5,13 +5,11 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=30")
     const list = document.querySelector(".product-list");
 
     data.results.forEach((pokemon) => {
-      // Pour chaque Pokémon, obtenir les détails supplémentaires
       fetch(pokemon.url)
         .then((response) => response.json())
         .then((pokemonDetails) => {
           const listItem = document.createElement("article");
 
-          // Générer un prix aléatoire entre 10 et 100
           const randomPrice = Math.floor(Math.random() * (100 - 10 + 1) + 10);
 
           listItem.innerHTML = `
