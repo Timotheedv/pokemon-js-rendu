@@ -10,36 +10,30 @@
   <header>
     <nav id="main-menu">
         <ul>
-          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="accueil.html">Accueil</a></li>
           <li><a href="produits.html">Acheter</a></li>
-          <li><a href="#panier">Panier</a></li>
+          <li><a href="panier.html">Panier</a></li>
         </ul>
       </nav>
   </header>
 
   <div class="product-page">
     <aside class="filters">
-      <h2>Filtres</h2>
-      <!-- Ajoutez des filtres selon vos besoins -->
-      <label for="type-filter">Type :</label>
-      <select id="type-filter">
-        <option value="fire">Feu</option>
-        <option value="water">Eau</option>
-        <option value="grass">Plante</option>
+     
+   
         <!-- Ajoutez d'autres options selon les types de Pokémon -->
       </select>
 
-      <label for="price-filter">Prix :</label>
-      <input type="range" id="price-filter" min="0" max="100" step="10" value="50">
-
+      
       <div id="search-bar">
         <div>
             <input type="text" id="searchInput" placeholder="Nom du Pokémon" />
             <button id="searchButton">Rechercher</button>
         </div>
+        <div id="searchList"></div>
     </aside>
 
-    <section class="product-list">
+    <section class="product-list" id="pokemonList">
       
         <!-- <img src="pokemon_image.jpg" alt="Nom du Pokémon" />
         <h3>Nom du Pokémon</h3>
