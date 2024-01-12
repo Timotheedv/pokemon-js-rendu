@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Produits - PokeMarket</title>
+</head>
+<body>
+  <header>
+    <nav id="main-menu">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="produits.html">Acheter</a></li>
+          <li><a href="#panier">Panier</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div class="product-page">
+    <aside class="filters">
+      <h2>Filtres</h2>
+      <!-- Ajoutez des filtres selon vos besoins -->
+      <label for="type-filter">Type :</label>
+      <select id="type-filter">
+        <option value="fire">Feu</option>
+        <option value="water">Eau</option>
+        <option value="grass">Plante</option>
+        <!-- Ajoutez d'autres options selon les types de Pokémon -->
+      </select>
+
+      <label for="price-filter">Prix :</label>
+      <input type="range" id="price-filter" min="0" max="100" step="10" value="50">
+
+      <div id="search-bar">
+        <div>
+            <input type="text" id="searchInput" placeholder="Nom du Pokémon" />
+            <button id="searchButton">Rechercher</button>
+        </div>
+    </aside>
+
+    <section class="product-list">
+      
+        <!-- <img src="pokemon_image.jpg" alt="Nom du Pokémon" />
+        <h3>Nom du Pokémon</h3>
+        <p>Type: Feu</p>
+        <p>Prix: $50</p> -->
+        <!-- Ajoutez d'autres informations sur le produit -->
+     
+
+      <!-- Ajoutez d'autres articles de produits selon vos besoins -->
+    </section>
+  </div>
+  <script src="produits.js"></script>
+</body>
+</html>
